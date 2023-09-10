@@ -3,4 +3,4 @@
 
 select *
 from {{ ref('my_first_dbt_model') }}
-where provider_city = 'ANCHORAGE'
+where provider_city <> 'ANCHORAGE'
